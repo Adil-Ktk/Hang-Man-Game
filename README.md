@@ -1,84 +1,83 @@
-🕹️ Hangman Console Game (C++)
+# 🕹️ Hangman Console Game (C++)
 
-This project is a simple Hangman-style console game developed in C++.
-It was created during my 1st semester as a side project to practice fundamental programming concepts and improve my understanding of basic C++ logic, loops, conditions, and user interaction.
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows)
 
-The main goal of this project was learning by building — experimenting with console graphics, random number generation, and interactive gameplay in a terminal environment.
+A classic Hangman-style console game developed to practice fundamental programming logic. This project was built during my 1st semester to bridge the gap between classroom theory and interactive software development.
 
-📖 Project Overview
+---
 
-The game selects a random animal name and hides it using placeholder characters (X).
-The player must guess the correct letters to reveal the hidden word before running out of chances.
+## 📖 Project Overview
 
-Each incorrect guess reduces the remaining chances, while correct guesses reveal the letters in the word. If all chances are used, the character is hanged and the game ends.
+The game challenges players to guess a hidden animal name, represented by placeholders (`X`). 
 
-To make the game more engaging, the program includes:
+### How it Works:
+* **Selection:** The program picks a random word from a predefined list.
+* **Interaction:** The player inputs letters to uncover the word.
+* **Consequences:** Incorrect guesses lead to the incremental drawing of the "hangman" via ASCII art.
+* **Outcome:** Reveal the word to win, or run out of lives and face the gallows!
 
-ASCII-style console graphics
+To enhance the terminal experience, the game utilizes **ASCII-style graphics** and **colored output** for a more engaging user interface.
 
-Colored terminal output
+---
 
-Random word selection
+## ✨ Features
 
-Tracking of incorrect guesses
+* 🎲 **Dynamic Word Selection:** Randomly pulls animal names for every new session.
+* 🎨 **Visual Feedback:** Interactive ASCII art that updates with every mistake.
+* 🌈 **Colored UI:** Uses terminal colors to distinguish between wins, losses, and warnings.
+* 📊 **Status Tracking:** Real-time display of incorrect guesses and remaining chances.
+* 🔄 **Replayability:** Option to restart the game immediately after a win or loss.
 
-Option to replay the game
+---
 
-✨ Features
+## 🧠 Concepts Practiced
 
-Randomly selected hidden word
+Building this project helped solidify several core C++ pillars:
 
-Interactive character guessing
+* **Logic Flow:** Mastering `while` loops for the game engine and `if/else` for win/loss conditions.
+* **Data Handling:** Using **Arrays** and **Strings** to store word lists and track player progress.
+* **Randomization:** Implementing `rand()` and `srand(time(0))` for non-repetitive gameplay.
+* **System Integration:** Utilizing `<windows.h>` for console manipulation and screen clearing (`system("cls")`).
 
-ASCII art game visuals
+---
 
-Colored console interface
+## 🛠️ Technologies Used
 
-Wrong guess tracking
+* **Language:** C++
+* **Headers:** * `<iostream>`: Standard Input/Output.
+    * `<ctime>`: Time seeding for random numbers.
+    * `<windows.h>`: Console colors and system commands.
+    * `<string>`: Word and character manipulation.
 
-Replay option after the game ends
+---
 
-🧠 Concepts Practiced
+## ▶️ How to Run
 
-This project helped me practice several core programming concepts, including:
+### Prerequisites
+* A C++ compiler (e.g., GCC/MinGW)
+* Windows OS (required for `<windows.h>` features)
 
-C++ syntax and structure
+### Installation
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/your-username/hangman-cpp-game.git](https://github.com/your-username/hangman-cpp-game.git)
 
-Loops and conditional statements
+Navigate to the project folder
 
-String manipulation
-
-Arrays
-
-Random number generation (rand() and srand())
-
-Basic console UI using ASCII art
-
-User input and output
-
-🛠️ Technologies Used
-
-C++
-
-<iostream> for input/output
-
-<ctime> for random number generation
-
-<windows.h> for console effects
-
-Windows console commands (system("cls"), system("color"))
-
-▶️ How to Run
-1. Clone the repository
-git clone https://github.com/your-username/hangman-cpp-game.git
-2. Navigate to the project folder
+Bash
 cd hangman-cpp-game
-3. Compile the program
-g++ hangman.cpp -o hangman
-4. Run the game
-./hangman
+Compile the program
+
+Bash
+g++ hangman.cpp -o hangman.exe
+Run the game
+
+Bash
+./hangman.exe
 📂 Project Structure
+Plaintext
 hangman-cpp-game
 │
-├── hangman.cpp
-└── README.md
+├── hangman.cpp    # Main game logic and ASCII art
+└── README.md      # Project documentation
