@@ -63,21 +63,4 @@ Building this project helped solidify several core C++ pillars:
    ```bash
    git clone [https://github.com/your-username/hangman-cpp-game.git](https://github.com/your-username/hangman-cpp-game.git)
 
-Navigate to the project folder
-
-Bash
-cd hangman-cpp-game
-Compile the program
-
-Bash
-g++ hangman.cpp -o hangman.exe
-Run the game
-
-Bash
-./hangman.exe
-📂 Project Structure
-Plaintext
-hangman-cpp-game
-│
-├── hangman.cpp    # Main game logic and ASCII art
-└── README.md      # Project documentation
+Navigate to the project folder and run in Dev or Vs Code
